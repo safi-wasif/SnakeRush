@@ -116,7 +116,7 @@ function gameEngine(){
 //main code
 
 
-//windows
+//window
 window.requestAnimationFrame(main);
 window.addEventListener('keydown' , e=> {
     
