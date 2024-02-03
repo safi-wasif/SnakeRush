@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:ital,wght@1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.body{
+    background: url("../images/bgpic.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#board{
+    background-color: rgb(66, 69, 69);
+    height: 92vmin;
+    width: 90vmin;
+    border: 2px solid black;
+    display:grid;
+    grid-template-columns: repeat(20 , 1fr);
+    grid-template-rows: repeat(20 , 1fr);
+
+}
+#copy{
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    font-size: 20px;
+    color: bisque;
+    font-weight: bold;
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right:200px;
+    font-size: 50px;
+    font-family: 'Creepster', system-ui;
+    color: rgb(223, 220, 220);
+    font-weight: bold;
+}
+#hiScore{
+    position: absolute;
+    top: 70px;
+    right:200px;
+    font-size: 50px;
+    font-family: 'Creepster', system-ui;
+    color: rgb(223, 220, 220);
+    font-weight: bold;
+
+}
+.head{
+    background: url('../images/hh.avif');
+    background-size: cover;
+    background-color: rgb(119, 52, 64);
+    border: 1px solid black;
+    border-radius: 30%;
+
+
+}
+.snake{
+    background: url("../images/bb.avif");
+    background-size: cover;
+    background-color: rgb(143, 82, 200);
+    border: 1px solid black;
+    border-radius: 15%;
+}
+.food{
+    background: url("../images/food.webp");
+    background-size: cover;
+    /* height: 1rem;
+    width: 1rem; */
+}
