@@ -156,26 +156,33 @@ function handleTouchMove(evt) {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
             /* right swipe */ 
-            console.log("ArrowRight");
-            inputDir.x = 1;
-            inputDir.y = 0;
-        } else {
-            /* left swipe */
             console.log("ArrowLeft");
             inputDir.x = -1;
             inputDir.y = 0;
+            
+            
+        } else {
+            /* left swipe */
+            console.log("ArrowRight");
+            inputDir.x = 1;
+            inputDir.y = 0;
+            
         }                       
     } else {
         if ( yDiff > 0 ) {
             /* down swipe */ 
-            console.log("ArrowDown");
-            inputDir.x = 0;
-            inputDir.y = 1;
-        } else { 
-            /* up swipe */
             console.log("ArrowUp");
             inputDir.x = 0;
             inputDir.y = -1;
+
+            
+            
+        } else { 
+            /* up swipe */
+            console.log("ArrowDown");
+            inputDir.x = 0;
+            inputDir.y = 1;
+            
         }                                                                 
     }
     /* reset values */
